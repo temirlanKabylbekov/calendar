@@ -1,5 +1,10 @@
 package models
 
+import (
+	"fmt"
+	"strings"
+)
+
 type UserId int
 
 func (uid UserId) Incr() UserId {
@@ -16,4 +21,11 @@ type User struct {
 	MiddleName string
 	LastName   string
 	Email      string
+}
+
+func (u User) GetFullName() string {
+	fullname := fmt.Sprintf("%s %s %s", u.LastName, u.FirstName, u.MiddleName)
+	fullname = strings.TrimSpace(fullname)
+	fullname = strings.ReplaceAll(fullname, "  ", " ")
+	return fullname
 }
