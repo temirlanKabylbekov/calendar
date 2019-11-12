@@ -1,8 +1,8 @@
 package services
 
 import (
-	"github.com/temirlanKabylbekov/calendar/pkg/interfaces"
-	"github.com/temirlanKabylbekov/calendar/pkg/models"
+	"github.com/temirlanKabylbekov/calendar/internal/interfaces"
+	"github.com/temirlanKabylbekov/calendar/internal/models"
 )
 
 type UserService struct {

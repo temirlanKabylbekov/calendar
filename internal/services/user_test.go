@@ -5,8 +5,8 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/temirlanKabylbekov/calendar/pkg/models"
-	"github.com/temirlanKabylbekov/calendar/pkg/repositories"
+	"github.com/temirlanKabylbekov/calendar/internal/models"
+	"github.com/temirlanKabylbekov/calendar/internal/repositories"
 )
 
 func TestServiceForUserInMemoryRepository_Create(t *testing.T) {

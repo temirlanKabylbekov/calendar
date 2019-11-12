@@ -1,6 +1,6 @@
 package repositories
 
-import "github.com/temirlanKabylbekov/calendar/pkg/models"
+import "github.com/temirlanKabylbekov/calendar/internal/models"
 
 type UserInMemoryRepository struct {
 	m      map[models.UserId]*models.User

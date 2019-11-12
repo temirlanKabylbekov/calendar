@@ -1,6 +1,6 @@
 package interfaces
 
-import "github.com/temirlanKabylbekov/calendar/pkg/models"
+import "github.com/temirlanKabylbekov/calendar/internal/models"
 
 type UserRepository interface {
 	Store(u *models.User) (models.UserId, error)

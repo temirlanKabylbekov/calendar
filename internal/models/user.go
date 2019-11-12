@@ -24,8 +24,8 @@ type User struct {
 }
 
 func (u User) GetFullName() string {
-	fullname := fmt.Sprintf("%s %s %s", u.LastName, u.FirstName, u.MiddleName)
-	fullname = strings.TrimSpace(fullname)
-	fullname = strings.ReplaceAll(fullname, "  ", " ")
-	return fullname
+	fullName := fmt.Sprintf("%s %s %s", u.LastName, u.FirstName, u.MiddleName)
+	fullName = strings.TrimSpace(fullName)
+	fullName = strings.ReplaceAll(fullName, "  ", " ")
+	return fullName
 }
