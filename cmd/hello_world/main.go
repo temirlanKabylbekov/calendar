@@ -3,9 +3,8 @@ package main
 import (
 	"log"
 
-	"github.com/temirlanKabylbekov/calendar/cmd"
-	"github.com/temirlanKabylbekov/calendar/config"
-	"github.com/temirlanKabylbekov/calendar/logger"
+	"github.com/temirlanKabylbekov/calendar/cmd/hello_world/config"
+	"github.com/temirlanKabylbekov/calendar/pkg/logger"
 )
 
 const (
@@ -49,7 +48,7 @@ func main() {
 		log.Fatal(err)
 	}
 
-	server := cmd.Server{Address: cfg.Server.Address(), Log: Log}
+	server := Server{Address: cfg.Server.Address(), Log: Log}
 	if err := server.Run(); err != nil {
 		log.Fatal(err)
 	}

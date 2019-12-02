@@ -1,0 +1,14 @@
+---
+development: true
+logger:
+  encoding: json
+  file_path: var.log
+  level: info
+  message:
+    caller_name: caller
+    level_name: level
+    message_name: message
+    time_name: time
+server:
+  host: localhost
+  port: 8080

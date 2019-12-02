@@ -2,7 +2,7 @@
 development: true
 logger:
   encoding: json
-  file_path: ./cmd/hello_world_server.log
+  file_path: server.log
   level: info
   message:
     caller_name: caller

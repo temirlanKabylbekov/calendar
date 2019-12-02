@@ -1,10 +1,10 @@
-package cmd
+package main
 
 import (
 	"fmt"
 	"net/http"
 
-	"github.com/temirlanKabylbekov/calendar/logger"
+	"github.com/temirlanKabylbekov/calendar/pkg/logger"
 )
 
 type Server struct {
